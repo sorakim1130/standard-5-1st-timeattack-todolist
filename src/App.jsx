@@ -1,7 +1,17 @@
-export default function App() {
+import styled from "@emotion/styled";
+import Layout from "./Layout.jsx";
+import TodoListContainer from "./components/TodoListContainer.jsx";
+
+const App = () => {
   return (
-    <>
-      <h1>투두리스트 타임어택</h1>
-    </>
+    <Container>
+      <Layout>
+        <TodoListContainer />
+      </Layout>
+    </Container>
   );
-}
+};
+
+const Container = styled.div``;
+
+export default App;
